@@ -7,5 +7,12 @@ class Developer extends Employee {
     public void addTechnology(Technology technology){
         technologie.add(technology);
     }
+    @Override
+    public int calculateSalary() {
+        int basicSalary = super.calculateSalary();
+    for(Technology tech : technologie){
+        basicSalary += tech.zwrocBonus();
+    }
+return basicSalary;
+    }
 }
-
