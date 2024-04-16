@@ -14,4 +14,11 @@ public class Employee {
         this.pesel = pesel;
         this.employeeYear = employeeYear;
     }
+    public int calculateSalary(){
+        int basicSalary = 3000;
+        basicSalary = 3000+(2024-employeeYear)*1000;
+        return basicSalary;
+    }
+
+
 }
